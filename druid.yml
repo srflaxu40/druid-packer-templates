@@ -1,0 +1,10 @@
+---
+# file: packer/druid.yml
+- name: Configure and deploy druid node
+  hosts: 127.0.0.1
+  connection: local
+  become: yes
+  roles:
+    - hosts
+    - java
+    - druid
